@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    background-color: hsl(0, 13%, 87%);
+    display: flex;
+    border-radius: 20px;
+}
+
+.column1 {
+    width: 33.33%;
+    height: 100%;
+    background-color: hsl(31, 77%, 52%);
+    padding: 30px 30px 30px 30px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.column2 {
+    width: 33.33%;
+    height: 100%;
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px 30px 30px 30px;
+}
+
+.column3 {
+    width: 33.33%;
+    height: 100%;
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px 30px 30px 30px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.title {
+    margin-top: 20px;
+    color: hsla(0, 0%, 100%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.para {
+    margin-top: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.learn-more {
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+
+.learn-more1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.learn-more2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.learn-more3 {
+    color: hsl(179, 100%, 13%);
+    margin-top: 30px;
+}
+
+.learn-more:active {
+    border: 2px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+}
+
+.learn-more1:active {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.learn-more2:active {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.learn-more3:active {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 810px){
+    .container{
+        width: 700px;
+        height: 370px;
+    }
+
+    .learn-more1{
+        margin-top: 51px;
+    }
+
+    .column1, .column2, .column3{
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 710px){
+    .container{
+        width: 600px;
+        height: 330px;
+    }
+
+    .title{
+        font-size: 25px;
+    }
+
+    .para{
+        font-size: 15px;
+    }
+
+    .column1, .column2, .column3{
+        padding: 12px 12px 12px 12px;
+    }
+
+    .learn-more{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .container{
+        width: 500px;
+        height: 300px;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .para{
+        font-size: 12px;
+    }
+
+    .voiture{
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .container{
+        width: 400px;
+        height: 270px;
+    }
+
+    .learn-more{
+        margin-top: 25px;
+        width: 80px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .column1, .column2, .column3{
+        padding: 8px 8px 8px 8px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .container{
+        width: 300px;
+        height: 600px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .voiture{
+        width: 40px;
+    }
+
+    .column1, .column2, .column3{
+        width: 100%;
+        border-radius: 0;
+        padding: 10px 20px 20px 20px;
+    }
+
+    .column1{
+        height: 33.33%;
+    }
+
+    .column2{
+        height: 33.33%;
+    }
+
+    .column3{
+        height: 33.33%;
+    }
+
+    .title{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .para{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .learn-more {
+        margin-top: 15px;
+        width: 80px;
+        height: 30px;
+        border: none;
+    }
+
+    .learn-more2{
+        margin-top: 5px;
+    }
+
+    .learn-more3{
+        margin-top: 5px;
+    }
+
+    .column1{
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .column3{
+        border-radius: 0px 0px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container{
+        width: 260px;
+        height: 490px;
+    }
+
+    .voiture{
+        width: 35px;
+    }
+
+    .title{
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .para{
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .learn-more{
+        margin-top: 10px;
+    }
+
+    .column1, .column2, .column3{
+        padding: 5px 20px 20px 20px;
+    }
+}
